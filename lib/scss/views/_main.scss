@@ -1,0 +1,14 @@
+/*
+# Main
+** main view styles **
+*/
+
+// body
+body {
+	color: #000;
+	@include gradient($ios7PurpleGradient1, $ios7PurpleGradient2);
+	font-family: $baseFontFamily;
+	font-size: $baseFontSize;
+	font-weight: 400;
+	line-height: 1.45;
+}

@@ -497,36 +497,3 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-/* ==========================================================================
-   Mac text rendering
-   ========================================================================== */
-
-/*
- * 1. Force to override 'subpixel-antialiased' as the default text redering method on mac
- */
-
-h1, h2, h3, h4, h5,
-li, p,
-a, span { -webkit-font-smoothing:antialiased; }
-
-
-/* ==========================================================================
-   Device App specific
-   ========================================================================== */
-
-/*
- * 1. prevent tap-holding bubble
- * 2. prevent users from selecting text within a given element
- * 3. remove tap highlight color
- * 4. remove anchor underline
- * 5. disable user drag and text selection
- */
-
-* {
-  -webkit-touch-callout:none; /* 1 */
-  -webkit-user-select:none; /* 2 */
-  -webkit-tap-highlight-color:rgba(0,0,0,0); /* 3 */
-  -webkit-user-drag:element; /* 5 */ }
-a, a:hover, a:focus, a:active {
-  text-decoration:none; /* 4 */ }

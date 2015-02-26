@@ -1,0 +1,15 @@
+/*
+# Helpers
+** common helpers **
+*/
+
+// image replacement
+.ir {
+	@include ir();
+}
+
+//clearfix
+.clearfix,
+.cfix {
+	@include cfix();
+}

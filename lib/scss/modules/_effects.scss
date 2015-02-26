@@ -1,0 +1,64 @@
+/*
+# Effects
+Pure CSS effects, including interactive transitions and animations
+*/
+
+/*
+## hover flip
+An element with two faces will flip upon hover
+*/
+
+//base
+.hoverFlip {
+	//self
+	position: relative;
+	//face
+	.face {
+		position: absolute;
+		@include perspective-origin();
+		@include backface-visibility();
+		@include transition(all, $transSpeed, $transEasing);
+	}
+
+	//flip direction - default
+	.face.front {
+		@include transform(perspective($perspective) rotateY(0deg));
+		opacity: 1;
+	}
+	.face.back {
+		@include transform(perspective($perspective) rotateY(-180deg));
+		opacity: 0;
+	}
+	&:hover {
+		.face.front {
+			@include transform(perspective($perspective) rotateY(-180deg));
+			opacity: 0;
+		}
+		.face.back {
+			@include transform(perspective($perspective) rotateY(0deg));
+			opacity: 1;
+		}
+	}
+}
+//flip other direction
+.hoverFlip.CCW {
+	//flip direction - alt
+	.face.front {
+		@include transform(perspective($perspective) rotateY(0deg));
+		opacity: 1;
+	}
+	.face.back {
+		@include transform(perspective($perspective) rotateY(180deg));
+		opacity: 0;
+	}
+	&:hover {
+		.face.front {
+			@include transform(perspective($perspective) rotateY(180deg));
+			opacity: 0;
+		}
+		.face.back {
+			@include transform(perspective($perspective) rotateY(0deg));
+			opacity: 1;
+		}
+	}
+}

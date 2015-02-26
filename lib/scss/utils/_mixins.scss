@@ -1,0 +1,119 @@
+/*
+# mixins
+** common utils mixins **
+*/
+
+// Utils
+// -------------------------------------------------------------------------------------------
+
+// Image Background Text Replacement
+@mixin ir() {
+	border: 0!important;
+	font: 0/0 a!important;
+	text-shadow: none!important;
+	color: transparent!important;
+}
+
+// Clear fix
+@mixin cfix() {
+	&:before,
+	&:after {
+		content:" "; // avoid opera space bug
+		display:table; // contain child element top margin
+	}
+	&:after {
+		clear:both;
+	}
+	*zoom:1; // For IE 6/7 only
+}
+
+//Text Truncate with elipsis
+@mixin text-truncate() {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// CSS3 properties
+// -------------------------------------------------------------------------------------------
+
+// Background Gradient
+@mixin gradient($startColor: #fff, $endColor: #000) {
+	background-color: $startColor;
+	background-image: -webkit-linear-gradient($startColor, $endColor);
+	background-image: linear-gradient($startColor, $endColor);
+}
+
+// Box-shadow
+@mixin box-shadow($shadows...) {
+	@if($shadows != null) {
+		-webkit-box-shadow: $shadows;
+		box-shadow: $shadows;
+	}
+}
+
+// input placeholder
+@mixin placeholder($color:#000, $style:normal, $target:null) {
+	@if ($target != null) {
+		&::-webkit-input-placeholder { color: #{$color}; font-style:#{$style}; }
+		&:-moz-placeholder { color: #{$color}; font-style:#{$style}; }
+		&::-moz-placeholder { color: #{$color}; font-style:#{$style}; }
+		&:-ms-input-placeholder { color: #{$color}; font-style:#{$style}; }
+	}
+	@else {
+		::-webkit-input-placeholder { color: #{$color}; font-style:#{$style}; }
+		:-moz-placeholder { color: #{$color}; font-style:#{$style}; }
+		::-moz-placeholder { color: #{$color}; font-style:#{$style}; }
+		:-ms-input-placeholder { color: #{$color}; font-style:#{$style}; }
+	}
+}
+
+// Transform combined mixin
+@mixin transform($transforms) {
+	@if($transforms != null) {
+		-webkit-transform: $transforms;
+		-ms-transform: $transforms;
+		transform: $transforms;
+	}
+}
+
+// Transitions mixins
+@mixin transition($transition-property:all, $transition-time: .25s, $method: ease-in-out) {
+	-webkit-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+// perspective
+@mixin perspective ($val: 400px) {
+	-webkit-perspective: $val;
+	perspective: $val;
+}
+
+// perspective-origin
+@mixin perspective-origin ($h: 50%, $v: 50%) {
+	-webkit-perspective-origin: $h $v;
+	perspective-origin: $h $v;
+}
+
+// backface-visibility
+@mixin backface-visibility ($val: hidden) {
+	-webkit-backface-visibility: $val;
+	backface-visibility: $val;
+}
+
+// layout helpers
+// -------------------------------------------------------------------------------------------
+
+// inline-block grid row
+@mixin grid-inline-row($textAlign:left,$verticalAlign:top) {
+	letter-spacing: -0.31em;
+	text-rendering: auto;
+	text-align: $textAlign;
+	> * {
+		display: inline-block;
+		vertical-align: $verticalAlign;
+		letter-spacing: normal;
+		text-rendering: auto;
+		text-align: left;
+	}
+}
