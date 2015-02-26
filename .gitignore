@@ -162,11 +162,20 @@ pip-log.txt
 # Mac crap
 .DS_Store
 
-############
-## Custom
-############
+#############
+## design
+#############
 
 # Adobe source files
-.psd
-.psb
-.ai
+# .psd
+# .psb
+# .ai
+
+#############
+## dev
+#############
+
+.sass-cache/*
+.tmp/
+bower_components
+node_modules

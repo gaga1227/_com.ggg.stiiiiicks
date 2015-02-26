@@ -12,9 +12,8 @@
 <link rel="stylesheet" href="lib/css/app.css">
 <!-- JS:PG -->
 <script src="phonegap.js"></script>
-<!-- JS:LIB -->
-<script src="lib/js/fastclick.js"></script>
-<script src="lib/js/iscroll/iscroll.js"></script>
+<!-- JS:VENDOR -->
+<script src="lib/js/vendor.js"></script>
 </head>
 <body>
 <!-- CONTAINER -->
@@ -22,14 +21,11 @@
 <!-- LOADER -->
 <div id="loader"></div>
 <!-- JS:APP -->
-<script src="lib/js/app/app-utils.js"></script>
-<script src="lib/js/app/app-data.js"></script>
-<script src="lib/js/app/app-view.js"></script>
-<script src="lib/js/app/app.js"></script>
+<script src="lib/js/app.js"></script>
 <!-- JS:CUSTOM -->
 <script>
-$(function() { 
-	FastClick.attach(document.body); 
+$(function() {
+	FastClick.attach(document.body);
 });
 </script>
 </body>
