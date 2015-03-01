@@ -1,0 +1,26 @@
+/*
+# Sticks
+** Sticks styles **
+*/
+
+// stick
+// -------------------------------------------------------------------------------------------
+
+#sticksLayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.stick {
+	overflow: hidden;
+	font-size: 0;
+	line-height: 1;
+	background: #fff;
+	opacity: 0.4;
+
+	@include transition();
+}

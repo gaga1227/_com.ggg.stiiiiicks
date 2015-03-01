@@ -201,6 +201,27 @@ An element with two faces will flip upon hover
 ** all animations/transitions **
 */
 /*
+# Sticks
+** Sticks styles **
+*/
+#sticksLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.stick {
+  overflow: hidden;
+  font-size: 0;
+  line-height: 1;
+  background: #fff;
+  opacity: 0.4;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+/*
 # Main
 ** main view styles **
 */
