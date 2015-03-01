@@ -59,11 +59,11 @@ gulp.task('watch', function () {
 });
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'lint', 'appscripts'], function () {
+gulp.task('serve', ['sass', 'appscripts'], function () {
 	browserSync({
 		server: "./"
 	});
-	gulp.watch("lib/js/app/**/*.js", ['lint', 'appscripts']);
+	gulp.watch("lib/js/app/**/*.js", ['appscripts']);
 	gulp.watch("lib/scss/**/*.scss", ['sass']);
 	gulp.watch("./*.html").on('change', reload);
 });
