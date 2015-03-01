@@ -13,7 +13,9 @@ var reload = browserSync.reload;
 // Compile Sass & auto-inject into browsers
 gulp.task('sass', function () {
 	return gulp.src('lib/scss/**/*.scss')
-		.pipe(sass())
+		.pipe(sass({
+			outputStyle: 'compressed'
+		}))
 		.pipe(gulp.dest('lib/css'))
 		.pipe(reload({
 			stream: true
