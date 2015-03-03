@@ -1,0 +1,49 @@
+/*
+# Layers
+** Layers styles **
+*/
+
+// layer
+// -------------------------------------------------------------------------------------------
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+// variations
+// -------------------------------------------------------------------------------------------
+
+#gridLayer {
+	opacity: 0.2;
+	z-index: 4;
+
+	// grid line
+	.line {
+		display: block;
+		position: absolute;
+		background: #000;
+		font-size: 0;
+		line-height: 1em;
+		overflow: hidden;
+		&.horz {
+			left: 0;
+			width: 100%;
+			height: 1px;
+		}
+		&.vert {
+			top: 0;
+			height: 100%;
+			width: 1px;
+		}
+	}
+}
+
+#sticksLayer {
+	z-index: 5;
+}
+
