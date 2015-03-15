@@ -6,37 +6,37 @@
 	version   	= "0.0.1"
 	versionCode = "1" >
 	<!-- versionCode is optional and Android only -->
-	
+
 	<!-- The name of the application -->
 	<name>StiiiiickS</name>
 	<!-- A description for your application -->
 	<description>
-		StiiiiickS, the puzzle game
+		Prototype
 	</description>
 	<!-- Author -->
 	<author href="http://www.gaga-graphics.com" email="johnny_xu_1227@hotmail.com">
 		Johnny Xu
 	</author>
-	
+
 	<!-- Core APIs/Plugins -->
 	<!-- refer to: https://build.phonegap.com/plugins -->
 	<gap:plugin name="org.apache.cordova.device" />
 	<gap:plugin name="org.apache.cordova.dialogs" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	
+
 	<!-- Non-Core APIs/Plugins -->
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	<gap:plugin name="nl.x-services.plugins.ioswebviewcolor" />
-	
+
 	<!-- Platforms -->
 	<gap:platform name="ios" />
 	<gap:platform name="android" />
-	
+
 	<!-- Perfs: multi-platform -->
 	<preference name="phonegap-version"				value="3.1.0" />
 	<preference name="orientation"					value="portrait" />
-	
+
 	<!-- Perfs: iOS -->
 	<preference name="target-device"				value="universal" />
 	<preference name="deployment-target" 			value="6.0" />				<!-- sets IPHONEOS_DEPLOYMENT_TARGET in ipa -->
@@ -45,23 +45,23 @@
 	<preference name="exit-on-suspend" 				value="false" />			<!-- app will terminate when suspended -->
 	<preference name="webviewbounce" 				value="false" />			<!-- controls whether the screen "bounces" when scrolled beyond on iOS. -->
 	<preference name="stay-in-webview" 				value="false" />			<!-- all links (even with target set to blank) will open in the app's webview -->
-	
+
 	<!-- Perfs: Android -->
 	<preference name="android-installLocation"		value="internalOnly" />		<!-- install location (internalOnly, auto or preferExternal) -->
 	<preference name="android-minSdkVersion"		value="14" />				<!-- Minimum Android SDK version -->
-	
+
 	<!-- Icon: iOS -->
 	<icon src="res/icon/ios/icon-57.png"	gap:platform="ios" width="57" 	height="57" />
     <icon src="res/icon/ios/icon-57-2x.png"	gap:platform="ios" width="114" 	height="114" />
 	<icon src="res/icon/ios/icon-72.png"	gap:platform="ios" width="72" 	height="72" />
-	<icon src="res/icon/ios/icon-72-2x.png"	gap:platform="ios" width="144" 	height="144" />	
-	
+	<icon src="res/icon/ios/icon-72-2x.png"	gap:platform="ios" width="144" 	height="144" />
+
 	<!-- Icon: Android -->
     <icon src="res/icon/android/icon-ldpi.png"	gap:platform="android" gap:density="ldpi" />
     <icon src="res/icon/android/icon-mdpi.png"	gap:platform="android" gap:density="mdpi" />
     <icon src="res/icon/android/icon-hdpi.png"	gap:platform="android" gap:density="hdpi" />
     <icon src="res/icon/android/icon-xhdpi.png"	gap:platform="android" gap:density="xhdpi" />
-	
+
     <!-- Splash: iOS -->
 	<gap:splash src="res/screen/ios/screen-iphone-portrait.png"		gap:platform="ios" width="320" 	height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"	gap:platform="ios" width="640" 	height="960" />
@@ -74,7 +74,7 @@
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
-	
+
 	<!-- Access -->
 	<access origin="*" />
 </widget>
