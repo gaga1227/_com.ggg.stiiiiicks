@@ -1,9 +1,9 @@
-<!-- More info on http://docs.build.phonegap.com/en_US/3.1.0/configuring_basics.md.html -->
+<!-- More info on http://docs.build.phonegap.com/en_US/configuring_basics.md.html#The%20Basics -->
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns	= "http://www.w3.org/ns/widgets"
-	xmlns:gap 	= "http://phonegap.com/ns/1.0"
-	id        	= "com.ggg.stiiiiicks"
-	version   	= "0.0.1"
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "com.ggg.stiiiiicks"
+	version     = "0.0.1"
 	versionCode = "1" >
 	<!-- versionCode is optional and Android only -->
 
@@ -22,58 +22,57 @@
 	<!-- refer to: https://build.phonegap.com/plugins -->
 	<gap:plugin name="org.apache.cordova.device" />
 	<gap:plugin name="org.apache.cordova.dialogs" />
+	<gap:plugin name="org.apache.cordova.console" />
 	<gap:plugin name="org.apache.cordova.network-information" />
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
-
-	<!-- Non-Core APIs/Plugins -->
-	<gap:plugin name="com.phonegap.plugin.statusbar" />
-	<gap:plugin name="nl.x-services.plugins.ioswebviewcolor" />
 
 	<!-- Platforms -->
 	<gap:platform name="ios" />
 	<gap:platform name="android" />
 
 	<!-- Perfs: multi-platform -->
-	<preference name="phonegap-version"				value="3.1.0" />
-	<preference name="orientation"					value="portrait" />
+	<preference name="phonegap-version" value="3.7.0" />
+	<preference name="orientation" value="portrait" />
 
 	<!-- Perfs: iOS -->
-	<preference name="target-device"				value="universal" />
-	<preference name="deployment-target" 			value="6.0" />				<!-- sets IPHONEOS_DEPLOYMENT_TARGET in ipa -->
-	<preference name="prerendered-icon" 			value="true" />				<!-- stop glossy effect to be added to icon -->
-	<preference name="detect-data-types" 			value="false" />			<!-- whether certain data types (e.g. phone, dates) are turned into links -->
-	<preference name="exit-on-suspend" 				value="false" />			<!-- app will terminate when suspended -->
-	<preference name="webviewbounce" 				value="false" />			<!-- controls whether the screen "bounces" when scrolled beyond on iOS. -->
-	<preference name="stay-in-webview" 				value="false" />			<!-- all links (even with target set to blank) will open in the app's webview -->
+	<preference name="target-device" value="handset" />
+	<preference name="deployment-target" value="7.0" /><!-- sets MinimumOSVersion in the ipa Propertly List -->
+	<preference name="prerendered-icon" value="true" /><!-- stop glossy effect to be added to icon -->
+	<preference name="detect-data-types" value="false" /><!-- stop turning certain data types into links -->
+	<preference name="exit-on-suspend" value="false" /><!-- app will terminate when suspended -->
+	<preference name="webviewbounce" value="false" /><!-- stop "bounces" when scrolled beyond on iOS -->
+	<preference name="stay-in-webview" value="false" /><!-- all links open in the app's webview -->
 
 	<!-- Perfs: Android -->
-	<preference name="android-installLocation"		value="internalOnly" />		<!-- install location (internalOnly, auto or preferExternal) -->
-	<preference name="android-minSdkVersion"		value="14" />				<!-- Minimum Android SDK version -->
+	<preference name="android-installLocation" value="internalOnly" /><!-- install location -->
+	<preference name="android-minSdkVersion" value="14" /><!-- Minimum Android SDK version -->
+
+	<!-- Icon: default -->
+	<icon src="icon-180.png" />
 
 	<!-- Icon: iOS -->
-	<icon src="res/icon/ios/icon-57.png"	gap:platform="ios" width="57" 	height="57" />
-    <icon src="res/icon/ios/icon-57-2x.png"	gap:platform="ios" width="114" 	height="114" />
-	<icon src="res/icon/ios/icon-72.png"	gap:platform="ios" width="72" 	height="72" />
-	<icon src="res/icon/ios/icon-72-2x.png"	gap:platform="ios" width="144" 	height="144" />
+	<icon src="res/icon/ios/icon-180.png" gap:platform="ios" width="180" height="180" /><!-- iPhone 6 / 6+ -->
+	<icon src="res/icon/ios/icon-120.png" gap:platform="ios" width="120" height="120" /><!-- iPhone / iPod Touch -->
+	<icon src="res/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" /><!-- iPhone / iPod Touch -->
 
 	<!-- Icon: Android -->
-    <icon src="res/icon/android/icon-ldpi.png"	gap:platform="android" gap:density="ldpi" />
-    <icon src="res/icon/android/icon-mdpi.png"	gap:platform="android" gap:density="mdpi" />
-    <icon src="res/icon/android/icon-hdpi.png"	gap:platform="android" gap:density="hdpi" />
-    <icon src="res/icon/android/icon-xhdpi.png"	gap:platform="android" gap:density="xhdpi" />
+	<icon src="res/icon/android/icon-48.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="res/icon/android/icon-72.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="res/icon/android/icon-96.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="res/icon/android/icon-144.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<icon src="res/icon/android/icon-192.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="res/icon/android/icon-192.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
 
-    <!-- Splash: iOS -->
-	<gap:splash src="res/screen/ios/screen-iphone-portrait.png"		gap:platform="ios" width="320" 	height="480" />
-    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"	gap:platform="ios" width="640" 	height="960" />
-	<gap:splash src="res/screen/ios/screen-iphone-portrait-ip5.png"	gap:platform="ios" width="640" 	height="1136" />
-	<gap:splash src="res/screen/ios/screen-ipad-portrait.png" 		gap:platform="ios" width="768" 	height="1024" />
-	<gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" 	gap:platform="ios" width="1536" height="2048" />
+	<!-- Splash: iOS -->
+	<gap:splash src="res/screen/ios/launch-portrait-640x960.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="res/screen/ios/launch-portrait-640x1136.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="res/screen/ios/launch-portrait-750x1334.png" gap:platform="ios" width="750" height="1334" />
+	<gap:splash src="res/screen/ios/launch-portrait-1242x2208.png" gap:platform="ios" width="1242" height="2208" />
 
 	<!-- Splash: android -->
-	<gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="res/screen/android/launch-portrait-480x800.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="res/screen/android/launch-portrait-480x800.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="res/screen/android/launch-portrait-720x1280.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="res/screen/android/launch-portrait-720x1280.png" gap:platform="android" gap:density="xhdpi" />
 
 	<!-- Access -->
 	<access origin="*" />
