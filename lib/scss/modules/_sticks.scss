@@ -12,9 +12,4 @@
 	line-height: 1;
 	background: #fff;
 	opacity: 0.4;
-	@include transition();
-
-	&.active {
-		opacity: 1;
-	}
 }
