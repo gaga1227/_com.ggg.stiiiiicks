@@ -20,7 +20,7 @@
 
 #gridLayer {
 	opacity: 0.2;
-	z-index: 4;
+	z-index: 5;
 
 	// grid line
 	.line {
@@ -64,7 +64,10 @@
 	}
 }
 
-#sticksLayer {
-	z-index: 5;
+#bgAnimLayer {
+	z-index: 10;
 }
 
+#sticksLayer {
+	z-index: 15;
+}
