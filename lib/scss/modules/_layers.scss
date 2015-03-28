@@ -74,6 +74,14 @@
 
 #bgAnimLayer {
 	z-index: 10;
+
+	// particle
+	.particle {
+		position: absolute;
+		transform: translate(-50%);
+		border-radius: 50%;
+		background: #fff;
+	}
 }
 
 #sticksLayer {
