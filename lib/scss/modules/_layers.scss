@@ -19,8 +19,16 @@
 // -------------------------------------------------------------------------------------------
 
 #gridLayer {
-	opacity: 0.2;
 	z-index: 5;
+	@include transition();
+	opacity: 0;
+	@include transform(scale(1.6));
+
+	// debug
+	&.debug {
+		opacity: 0.2;
+		@include transform(scale(1));
+	}
 
 	// grid line
 	.line {
