@@ -54,17 +54,18 @@
 				display: block;
 				position: absolute;
 				top: 0;
-				left: 0px;
+				left: 0;
 				width: 13px;
 				height: 13px;
 				color: white;
 				background: black;
 				text-align: center;
-				font-size: 9px;
+				font-family: 'bob', sans-serif;
+				font-size: 10px;
 				font-weight: normal;
 				line-height: 13px;
 				border-radius: 50%;
-				transform: translate(-50%, 0);
+				@include transform(translate(-50%, 0));
 			}
 			&:after {
 				top: auto;
@@ -81,7 +82,7 @@
 	// particle
 	.particle {
 		position: absolute;
-		transform: translate(-50%);
+		@include transform(translate(-50%));
 		border-radius: 50%;
 		background: #fff;
 	}

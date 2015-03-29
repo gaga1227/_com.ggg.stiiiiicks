@@ -6,6 +6,11 @@
 <meta name="format-detection" content="telephone=no">
 <title>StiiiiickS</title>
 <!-- CSS:FONT -->
+<link rel="stylesheet" href="lib/font/bob/font.css">
+<link rel="stylesheet" href="lib/font/california/font.css">
+<link rel="stylesheet" href="lib/font/hanken/font.css">
+<link rel="stylesheet" href="lib/font/helvetica-round/font.css">
+<link rel="stylesheet" href="lib/font/sleepytime/font.css">
 <!-- CSS:ICON -->
 <link rel="stylesheet" href="lib/icon/ionicons/css/ionicons.min.css">
 <!-- CSS:APP -->
@@ -17,11 +22,18 @@
 <script src="lib/js/vendor.min.js"></script>
 </head>
 <body>
-<!-- CONTAINER -->
+<!-- GAME -->
 <div id="gameCanvas">
-	<div id="gridLayer" class="layer"></div>
+	<div id="gridLayer" class="layer debug"></div>
 	<div id="bgAnimLayer" class="layer"></div>
 	<div id="sticksLayer" class="layer"></div>
+</div>
+<!-- GUI -->
+<div class="gui top">
+	<div class="score">
+		<div class="label">You've aligned</div>
+		<div class="text">0</div>
+	</div>
 </div>
 <!-- JS:APP -->
 <script src="lib/js/app.min.js"></script>
