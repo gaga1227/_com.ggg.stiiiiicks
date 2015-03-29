@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'bob';
+    src: url('BoB-webfont.eot');
+    src: url('BoB-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BoB-webfont.woff2') format('woff2'),
+         url('BoB-webfont.woff') format('woff'),
+         url('BoB-webfont.ttf') format('truetype'),
+         url('BoB-webfont.svg#bobregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
