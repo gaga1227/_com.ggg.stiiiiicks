@@ -76,6 +76,7 @@
 
 #bgAnimLayer {
 	z-index: 10;
+	overflow: visible;
 
 	// particle
 	.particle {
