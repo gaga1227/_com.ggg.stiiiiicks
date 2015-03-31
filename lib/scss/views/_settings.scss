@@ -1,0 +1,27 @@
+/*
+# Settings
+** Settings styles **
+*/
+
+// container
+#settings {
+	position: fixed;
+	top :0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	color: #fff;
+	background: rgba(0,0,0,0.85);
+	opacity: 0;
+	@include transform(scale(0));
+	overflow: hidden;
+	z-index: 200;
+	@include transition();
+
+	// active
+	&.active {
+		opacity: 1;
+		@include transform(scale(1));
+	}
+}

@@ -94,7 +94,7 @@ gulp.task('dist', ['clean'], function () {
 gulp.task('dev', ['sass', 'lint', 'appscripts', 'watch']);
 
 // Build Tasks
-gulp.task('build', ['sass', 'lint', 'appscripts', 'vendorscripts', 'dist']);
+gulp.task('build', ['sass', 'lint', 'appscripts', 'vendorscripts']);
 
 // Default Task
 gulp.task('default', ['serve']);

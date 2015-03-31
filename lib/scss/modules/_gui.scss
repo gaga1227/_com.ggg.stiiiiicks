@@ -19,6 +19,7 @@
 	&.top {
 		top: 20px;
 		height: 60px;
+		padding: 0 60px;
 
 		// score text
 		.score {
@@ -32,7 +33,6 @@
 				font-weight: 400;
 				line-height: 1em;
 				text-shadow: 0 2px 0px rgba(0,0,0,0.2);
-				// text-transform: uppercase;
 			}
 			.text {
 				font-family: 'bob', sans-serif;
@@ -41,6 +41,49 @@
 				line-height: 1em;
 				letter-spacing: -0.25em;
 				text-shadow: 0 4px 0px rgba(0,0,0,0.2);
+			}
+		}
+
+		// icons
+		.icon {
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 55px;
+			height: 60px;
+			overflow: hidden;
+			color: #fff;
+
+			// icon
+			&:before {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 1em;
+				height: 1em;
+				margin: -0.5em 0 0 -0.5em;
+				font-size: 40px;
+				line-height: 1em;
+				text-shadow: 0 4px 0px rgba(0,0,0,0.2);
+				opacity: 0.6;
+			}
+
+			// interaction
+			&.active {
+				&:before {
+					margin-top: -0.4em;
+					text-shadow: none;
+					opacity: 1;
+				}
+			}
+
+			// layout
+			&.left {
+				left: 5px;
+			}
+			&.right {
+				right: 5px;
 			}
 		}
 	}
