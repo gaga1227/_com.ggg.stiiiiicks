@@ -2,3 +2,8 @@
 # Buttons
 ** all buttons styles **
 */
+
+[data-role="button"][disabled] {
+	opacity: 0.6;
+	pointer-events: none;
+}

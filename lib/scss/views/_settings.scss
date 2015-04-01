@@ -10,11 +10,11 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	padding: 20px;
 	color: #fff;
-	background: rgba(0,0,0,0.85);
+	@include gradient($ios7BlueGradient2, $ios7BlueGradient1);
 	opacity: 0;
 	@include transform(scale(0));
+	@include transform-origin(calc(100% - 30px) 50px);
 	overflow: hidden;
 	z-index: 200;
 	@include transition();
@@ -23,5 +23,65 @@
 	&.active {
 		opacity: 1;
 		@include transform(scale(1));
+	}
+
+	// title
+	.title {
+		.label {
+			color: $ios7YellowGradient1;
+		}
+		.text {
+			color: $ios7YellowGradient1;
+		}
+	}
+
+	// content
+	.content {
+		margin-top: 120px;
+		text-align: center;
+
+		// icon
+		.icon {
+			display: inline-block;
+			width: 26%;
+			margin: 15px 0;
+			&:before {
+				width: 1.5em;
+				height: 1.5em;
+				color: #fff;
+				background: $ios7TealGradient2;
+				font-size: 36px;
+				line-height: 1.5em;
+				text-shadow: 0 2px 0 rgba(0,0,0,0.3);
+				vertical-align: center;
+				border-radius: 50%;
+			}
+			.label {
+				display: block;
+				margin-top: 0.3em;
+				font-family: 'california', sans-serif;
+				font-size: 18px;
+				line-height: 1em;
+				text-shadow: 0 2px 0 rgba(0,0,0,0.3);
+			}
+
+			// active
+			&.active {
+				&:before {
+					color: $ios7TealGradient2;
+					background: #fff;
+					text-shadow: none;
+				}
+			}
+
+			// selected
+			&.selected {
+				&:before {
+					color: $ios7TealGradient2;
+					background: #fff;
+					text-shadow: none;
+				}
+			}
+		}
 	}
 }

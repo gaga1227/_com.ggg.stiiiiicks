@@ -1,0 +1,50 @@
+/*
+# Game
+** Game styles **
+*/
+
+// container
+#game {
+	// self
+	position: fixed;
+	top :0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	@include gradient($ios7OrangeGradient1, $ios7OrangeGradient2);
+
+	// game canvas container
+	#gameCanvas {
+		position: absolute;
+		top: 100px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	// title
+	.title {
+		.label {
+			color: $ios7BlackGradient2;
+			text-shadow: 0 2px 0px rgba(255,255,255,0.4);
+		}
+		.text {
+			color: $ios7BlackGradient2;
+			text-shadow: 0 4px 0px rgba(255,255,255,0.4);
+		}
+	}
+
+	// icon
+	.icon {
+		&:before {
+			color: $ios7BlackGradient1;
+			text-shadow: 0 4px 0px rgba(255,255,255,0.4);
+		}
+		// interaction
+		&.active {
+			&:before {
+				text-shadow: none;
+			}
+		}
+	}
+}

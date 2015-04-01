@@ -22,28 +22,51 @@
 <script src="lib/js/vendor.min.js"></script>
 </head>
 <body>
+
 <!-- GAME -->
-<div id="gameCanvas">
-	<div id="gridLayer" class="layer"></div>
-	<div id="bgAnimLayer" class="layer"></div>
-	<div id="sticksLayer" class="layer"></div>
-</div>
-<!-- GUI -->
-<div class="gui top">
-	<div class="score">
-		<div class="label">You've aligned</div>
-		<div class="text">0</div>
+<div id="game">
+	<!-- GAME -->
+	<div id="gameCanvas">
+		<div id="gridLayer" class="layer"></div>
+		<div id="bgAnimLayer" class="layer"></div>
+		<div id="sticksLayer" class="layer"></div>
 	</div>
-	<i data-role="button" class="icon left"></i>
-	<i data-role="button" class="icon right btnSettings ion-gear-a"></i>
+	<!-- GUI -->
+	<div class="gui top">
+		<div class="title">
+			<div class="label">You've aligned</div>
+			<div class="text">0</div>
+		</div>
+		<i data-role="button" class="icon left"></i>
+		<i data-role="button" class="icon right btnSettings ion-gear-a"></i>
+	</div>
 </div>
+
 <!-- SETTINGS -->
 <div id="settings">
+	<!-- CONTENT -->
+	<div class="content">
+		<div class="icon ion-podium" data-role="button"><span class="label">Leaderboard</span></div>
+		<div class="icon ion-ribbon-a" data-role="button"><span class="label">Achievements</span></div>
+		<div class="icon ion-forward" data-role="button"><span class="label">Share</span></div>
+		<div class="icon ion-star" data-role="button"><span class="label">Rate</span></div>
+		<div class="icon btnGrid ion-ios-grid-view-outline" data-role="button"><span class="label">Grid</span></div>
+		<div class="icon ion-android-unlock" data-role="button"><span class="label">Lv i</span></div>
+		<div class="icon ion-android-unlock" data-role="button"><span class="label">Lv ii</span></div>
+		<div class="icon ion-android-unlock" data-role="button"><span class="label">Lv iii</span></div>
+		<div class="icon ion-android-lock" data-role="button" disabled><span class="label">Lv iiii</span></div>
+		<div class="icon ion-android-lock" data-role="button" disabled><span class="label">Lv iiiii</span></div>
+	</div>
+	<!-- GUI -->
 	<div class="gui top">
+		<div class="title">
+			<div class="label">Game</div>
+			<div class="text">Settings</div>
+		</div>
 		<i data-role="button" class="icon right btnSettings ion-close-round"></i>
 	</div>
-	<h1 class="h1">Settings</h1>
 </div>
+
 <!-- JS:APP -->
 <script src="lib/js/app.min.js"></script>
 <!-- JS:CUSTOM -->

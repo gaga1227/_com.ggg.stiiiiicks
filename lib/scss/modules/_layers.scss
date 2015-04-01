@@ -25,13 +25,15 @@
 	// self
 	overflow: visible;
 	z-index: 5;
+	background: rgba(0,0,0,0.1);
+	border-radius: 8px;
 	opacity: 0;
 	@include transform(scale(0, 1));
 	@include transition();
 
 	// active
 	&.active {
-		opacity: 0.1;
+		opacity: 1;
 		@include transform(scale(1));
 	}
 
@@ -39,7 +41,7 @@
 	.line {
 		display: block;
 		position: absolute;
-		background: #000;
+		background: rgba(0,0,0,0.1);
 		font-size: 0;
 		line-height: 1em;
 		&.horz {
@@ -57,23 +59,24 @@
 				content: attr(data-index);
 				display: block;
 				position: absolute;
-				top: $indicatorSize * -1;
+				top: $indicatorSize * -0.5;
 				left: 0;
 				width: $indicatorSize;
 				height: $indicatorSize;
-				color: white;
-				background: black;
+				color: #fff;
+				background: #000;
 				text-align: center;
 				font-family: 'bob', sans-serif;
 				font-size: 10px;
 				font-weight: normal;
 				line-height: $indicatorSize;
 				border-radius: 50%;
+				opacity: 0.4;
 				@include transform(translate(-50%, 0) scale(1));
 			}
 			&:after {
 				top: auto;
-				bottom: $indicatorSize * -1;
+				bottom: $indicatorSize * -0.5;
 			}
 		}
 	}

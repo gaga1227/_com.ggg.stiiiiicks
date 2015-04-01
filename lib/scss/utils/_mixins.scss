@@ -77,6 +77,15 @@
 	}
 }
 
+// Transform origin mixin
+@mixin transform-origin($val) {
+	@if($val != null) {
+		-webkit-transform-origin: $val;
+		-ms-transform-origin: $val;
+		transform-origin: $val;
+	}
+}
+
 // Transitions mixins
 @mixin transition($transition-property:all, $transition-time: .25s, $method: ease-in-out) {
 	-webkit-transition: $transition-property $transition-time $method;

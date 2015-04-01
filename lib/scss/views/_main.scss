@@ -6,20 +6,8 @@
 // body
 body {
 	color: #000;
-	@include gradient($ios7PurpleGradient1, $ios7PurpleGradient2);
 	font-family: $baseFontFamily;
 	font-size: $baseFontSize;
 	font-weight: 400;
 	line-height: 1.45;
-}
-
-// game canvas container
-#gameCanvas {
-	position: absolute;
-	top: 80px;
-	left: 20px;
-	right: 20px;
-	bottom: 20px;
-	background: rgba(0,0,0,0.1);
-	border-radius: 8px;
 }
