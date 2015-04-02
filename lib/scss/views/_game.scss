@@ -5,12 +5,6 @@
 
 // container
 #game {
-	// self
-	position: fixed;
-	top :0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	@include gradient($ios7OrangeGradient1, $ios7OrangeGradient2);
 
 	// game canvas container

@@ -5,11 +5,6 @@
 
 // container
 #settings {
-	position: fixed;
-	top :0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	color: #fff;
 	@include gradient($ios7BlueGradient2, $ios7BlueGradient1);
 	opacity: 0;

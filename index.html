@@ -24,7 +24,7 @@
 <body>
 
 <!-- GAME -->
-<div id="game">
+<div id="game" class="fixedLayer">
 	<!-- GAME -->
 	<div id="gameCanvas">
 		<div id="gridLayer" class="layer"></div>
@@ -43,7 +43,7 @@
 </div>
 
 <!-- SETTINGS -->
-<div id="settings">
+<div id="settings" class="fixedLayer">
 	<!-- CONTENT -->
 	<div class="content">
 		<div class="icon ion-podium" data-role="button"><span class="label">Leaderboard</span></div>
@@ -64,6 +64,15 @@
 			<div class="text">Settings</div>
 		</div>
 		<i data-role="button" class="icon right btnSettings ion-close-round"></i>
+	</div>
+</div>
+
+<!-- MESSAGE -->
+<div id="message" class="fixedLayer hidden">
+	<div class="overlay layer"></div>
+	<div class="modal">
+		<div class="msgText"><b>2X</b><br>Bounce<br>Bonus!</div>
+		<div class="border anim-spin"></div>
 	</div>
 </div>
 

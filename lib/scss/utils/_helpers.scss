@@ -13,3 +13,8 @@
 .cfix {
 	@include cfix();
 }
+
+// visibility
+.hidden {
+	display: none!important;
+}
