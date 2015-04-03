@@ -67,17 +67,20 @@
 	</div>
 </div>
 
-<!-- MESSAGE -->
-<div id="message" class="fixedLayer hidden">
+<!-- TEMPLATE: MESSAGE -->
+<script id="template-message" type="text/x-template">
+<div id="message" class="fixedLayer">
 	<div class="overlay layer"></div>
 	<div class="modal">
-		<div class="msgText"><b>2X</b><br>Bounce<br>Bonus!</div>
+		<div class="msgText"></div>
 		<div class="border anim-spin"></div>
 	</div>
 </div>
+</script>
 
 <!-- JS:APP -->
 <script src="lib/js/app.min.js"></script>
+
 <!-- JS:CUSTOM -->
 <script>
 $(function() {
