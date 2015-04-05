@@ -23,7 +23,6 @@
 		background: #fff;
 		border-radius: 50%;
 		@include transform-origin(50%);
-		@include backface-visibility();
 
 		&:before,
 		.border {
