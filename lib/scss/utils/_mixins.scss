@@ -43,6 +43,12 @@
 	background-image: -webkit-linear-gradient($startColor, $endColor);
 	background-image: linear-gradient($startColor, $endColor);
 }
+@mixin radial-gradient($startColor: #fff, $endColor: #000) {
+	background-color: $startColor;
+	background-image: -webkit-radial-gradient(center, ellipse cover, $startColor 0%, $endColor 100%);
+	background-image: -ms-radial-gradient(center, ellipse cover, $startColor 0%, $endColor 100%);
+	background-image: radial-gradient(ellipse at center, $startColor 0%, $endColor 100%);
+}
 
 // Box-shadow
 @mixin box-shadow($shadows...) {
