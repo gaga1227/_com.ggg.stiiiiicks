@@ -41,6 +41,10 @@
 				line-height: 1em;
 				letter-spacing: -0.25em;
 				text-shadow: 0 4px 0px rgba(0,0,0,0.3);
+				&.clone {
+					margin-top: -1em;
+					text-shadow: none;
+				}
 			}
 		}
 
