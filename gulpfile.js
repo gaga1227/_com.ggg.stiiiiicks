@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
+var manifest = require('gulp-manifest');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
@@ -90,11 +91,32 @@ gulp.task('dist', ['clean'], function () {
 	gulp.src('lib/img/**/*').pipe(gulp.dest('www/lib/img'));
 });
 
+// prep the app cache manifest
+gulp.task('manifest', function () {
+	gulp.src([
+		'index.html',
+		'lib/css/**/*.css',
+		'lib/js/*.min.js',
+		'lib/font/**/*',
+		'lib/icon/**/*',
+		'lib/img/**/*'
+	])
+		.pipe(manifest({
+			hash: true,
+			timestamp: true,
+			preferOnline: true,
+			network: ['http://*', 'https://*', '*'],
+			filename: 'app.manifest',
+			exclude: 'app.manifest'
+		}))
+		.pipe(gulp.dest(''));
+});
+
 // Dev Tasks
 gulp.task('dev', ['sass', 'lint', 'appscripts', 'watch']);
 
 // Build Tasks
-gulp.task('build', ['sass', 'lint', 'appscripts', 'vendorscripts']);
+gulp.task('build', ['sass', 'lint', 'appscripts', 'vendorscripts', 'manifest']);
 
 // Default Task
 gulp.task('default', ['serve']);
