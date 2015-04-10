@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'california';
-    src: url('California-webfont.eot');
-    src: url('California-webfont.eot?#iefix') format('embedded-opentype'),
-         url('California-webfont.woff2') format('woff2'),
+    src: url('California-webfont.woff2') format('woff2'),
          url('California-webfont.woff') format('woff'),
          url('California-webfont.ttf') format('truetype'),
          url('California-webfont.svg#californiaregular') format('svg');

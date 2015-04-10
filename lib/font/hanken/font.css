@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'hanken';
-    src: url('HankenRound-Regular-webfont.eot');
-    src: url('HankenRound-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('HankenRound-Regular-webfont.woff2') format('woff2'),
+    src: url('HankenRound-Regular-webfont.woff2') format('woff2'),
          url('HankenRound-Regular-webfont.woff') format('woff'),
          url('HankenRound-Regular-webfont.ttf') format('truetype'),
          url('HankenRound-Regular-webfont.svg#hanken_roundregular') format('svg');
@@ -11,9 +9,7 @@
 }
 @font-face {
     font-family: 'hanken';
-    src: url('HankenRound-Bold-webfont.eot');
-    src: url('HankenRound-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('HankenRound-Bold-webfont.woff2') format('woff2'),
+    src: url('HankenRound-Bold-webfont.woff2') format('woff2'),
          url('HankenRound-Bold-webfont.woff') format('woff'),
          url('HankenRound-Bold-webfont.ttf') format('truetype'),
          url('HankenRound-Bold-webfont.svg#hanken_roundbold') format('svg');

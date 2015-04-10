@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'sleepytime';
-    src: url('SleepyTime-webfont.eot');
-    src: url('SleepyTime-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SleepyTime-webfont.woff2') format('woff2'),
+    src: url('SleepyTime-webfont.woff2') format('woff2'),
          url('SleepyTime-webfont.woff') format('woff'),
          url('SleepyTime-webfont.ttf') format('truetype'),
          url('SleepyTime-webfont.svg#dk_sleepy_timeregular') format('svg');

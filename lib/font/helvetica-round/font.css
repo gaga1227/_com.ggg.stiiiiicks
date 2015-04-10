@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'helveticaRoundCondensed';
-    src: url('helveticaroundedltstd-bdcnwebfont.eot');
-    src: url('helveticaroundedltstd-bdcnwebfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaroundedltstd-bdcnwebfont.woff') format('woff'),
+    src: url('helveticaroundedltstd-bdcnwebfont.woff') format('woff'),
          url('helveticaroundedltstd-bdcnwebfont.ttf') format('truetype'),
          url('helveticaroundedltstd-bdcnwebfont.svg#helveticarounded_lt_std_bdcRg') format('svg');
     font-weight: bold;
@@ -10,9 +8,7 @@
 }
 @font-face {
     font-family: 'helveticaRoundCondensed';
-    src: url('helveticaroundedltstd-bdcnowebfont.eot');
-    src: url('helveticaroundedltstd-bdcnowebfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaroundedltstd-bdcnowebfont.woff') format('woff'),
+    src: url('helveticaroundedltstd-bdcnowebfont.woff') format('woff'),
          url('helveticaroundedltstd-bdcnowebfont.ttf') format('truetype'),
          url('helveticaroundedltstd-bdcnowebfont.svg#helveticarounded_lt_std_bdcIt') format('svg');
     font-weight: bold;
@@ -20,9 +16,7 @@
 }
 @font-face {
     font-family: 'helveticaRound';
-    src: url('helveticaroundedltstd-bdwebfont.eot');
-    src: url('helveticaroundedltstd-bdwebfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaroundedltstd-bdwebfont.woff') format('woff'),
+    src: url('helveticaroundedltstd-bdwebfont.woff') format('woff'),
          url('helveticaroundedltstd-bdwebfont.ttf') format('truetype'),
          url('helveticaroundedltstd-bdwebfont.svg#helveticarounded_lt_std_bdRg') format('svg');
     font-weight: 600;
@@ -30,9 +24,7 @@
 }
 @font-face {
     font-family: 'helveticaRound';
-    src: url('helveticaroundedltstd-bdowebfont.eot');
-    src: url('helveticaroundedltstd-bdowebfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaroundedltstd-bdowebfont.woff') format('woff'),
+    src: url('helveticaroundedltstd-bdowebfont.woff') format('woff'),
          url('helveticaroundedltstd-bdowebfont.ttf') format('truetype'),
          url('helveticaroundedltstd-bdowebfont.svg#helveticarounded_lt_std_bdIt') format('svg');
     font-weight: 600;
@@ -40,9 +32,7 @@
 }
 @font-face {
     font-family: 'helveticaRound';
-    src: url('helveticaroundedltstd-blackwebfont.eot');
-    src: url('helveticaroundedltstd-blackwebfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaroundedltstd-blackwebfont.woff') format('woff'),
+    src: url('helveticaroundedltstd-blackwebfont.woff') format('woff'),
          url('helveticaroundedltstd-blackwebfont.ttf') format('truetype'),
          url('helveticaroundedltstd-blackwebfont.svg#helveticarounded_lt_std_blkRg') format('svg');
     font-weight: 900;
@@ -50,9 +40,7 @@
 }
 @font-face {
     font-family: 'helveticaRound';
-    src: url('helveticaroundedltstd-blkowebfont.eot');
-    src: url('helveticaroundedltstd-blkowebfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaroundedltstd-blkowebfont.woff') format('woff'),
+    src: url('helveticaroundedltstd-blkowebfont.woff') format('woff'),
          url('helveticaroundedltstd-blkowebfont.ttf') format('truetype'),
          url('helveticaroundedltstd-blkowebfont.svg#helveticarounded_lt_std_blkIt') format('svg');
     font-weight: 900;
