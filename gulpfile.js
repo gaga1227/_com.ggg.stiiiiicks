@@ -100,7 +100,7 @@ gulp.task('manifest', function () {
 			preferOnline: true,
 			network: ['http://*', 'https://*', '*'],
 			filename: 'app.manifest',
-			exclude: ['app.manifest']
+			exclude: 'app.manifest'
 		}))
 		.pipe(gulp.dest(''));
 });
