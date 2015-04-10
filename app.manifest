@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Fri Apr 10 2015 22:52:28 GMT+1000 (澳大利亚东部标准时间)
+# Time: Fri Apr 10 2015 23:02:55 GMT+1000 (澳大利亚东部标准时间)
 
 
 CACHE:
@@ -10,47 +10,31 @@ app.min.js
 vendor.min.js
 bob/BoB-webfont.svg
 bob/BoB-webfont.ttf
-bob/BoB-webfont.woff
-bob/BoB-webfont.woff2
 bob/font.css
 california/California-webfont.svg
 california/California-webfont.ttf
-california/California-webfont.woff
-california/California-webfont.woff2
 california/font.css
 hanken/font.css
 hanken/HankenRound-Bold-webfont.svg
 hanken/HankenRound-Bold-webfont.ttf
-hanken/HankenRound-Bold-webfont.woff
-hanken/HankenRound-Bold-webfont.woff2
 hanken/HankenRound-Regular-webfont.svg
 hanken/HankenRound-Regular-webfont.ttf
-hanken/HankenRound-Regular-webfont.woff
-hanken/HankenRound-Regular-webfont.woff2
 helvetica-round/font.css
 helvetica-round/helveticaroundedltstd-bdcnowebfont.svg
 helvetica-round/helveticaroundedltstd-bdcnowebfont.ttf
-helvetica-round/helveticaroundedltstd-bdcnowebfont.woff
 helvetica-round/helveticaroundedltstd-bdcnwebfont.svg
 helvetica-round/helveticaroundedltstd-bdcnwebfont.ttf
-helvetica-round/helveticaroundedltstd-bdcnwebfont.woff
 helvetica-round/helveticaroundedltstd-bdowebfont.svg
 helvetica-round/helveticaroundedltstd-bdowebfont.ttf
-helvetica-round/helveticaroundedltstd-bdowebfont.woff
 helvetica-round/helveticaroundedltstd-bdwebfont.svg
 helvetica-round/helveticaroundedltstd-bdwebfont.ttf
-helvetica-round/helveticaroundedltstd-bdwebfont.woff
 helvetica-round/helveticaroundedltstd-blackwebfont.svg
 helvetica-round/helveticaroundedltstd-blackwebfont.ttf
-helvetica-round/helveticaroundedltstd-blackwebfont.woff
 helvetica-round/helveticaroundedltstd-blkowebfont.svg
 helvetica-round/helveticaroundedltstd-blkowebfont.ttf
-helvetica-round/helveticaroundedltstd-blkowebfont.woff
 sleepytime/font.css
 sleepytime/SleepyTime-webfont.svg
 sleepytime/SleepyTime-webfont.ttf
-sleepytime/SleepyTime-webfont.woff
-sleepytime/SleepyTime-webfont.woff2
 ionicons/css/ionicons.css
 ionicons/css/ionicons.min.css
 ionicons/fonts/ionicons.eot
@@ -70,4 +54,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 04b1288e0adf87948f8ddf26d7a8fa4d325164ef121243b7aa0e3706d18654d7
+# hash: deec3173c8f2f14f717e6d78fe1c2187763182a76176334a028a9b8371c26327
