@@ -5,7 +5,7 @@
 
 // container
 #game {
-	@include gradient($ios7OrangeGradient1, $ios7OrangeGradient2);
+	@include gradient($ios7RedGradient1, $ios7RedGradient2);
 
 	// game canvas container
 	#gameCanvas {

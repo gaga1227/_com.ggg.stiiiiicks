@@ -109,7 +109,7 @@ gulp.task('manifest', function () {
 gulp.task('dev', ['sass', 'lint', 'appscripts', 'watch']);
 
 // Build Tasks
-gulp.task('build', ['sass', 'lint', 'appscripts', 'vendorscripts', 'manifest']);
+gulp.task('build', ['sass', 'lint', 'appscripts', 'vendorscripts']);
 
 // Default Task
 gulp.task('default', ['serve']);
