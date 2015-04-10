@@ -93,21 +93,14 @@ gulp.task('dist', ['clean'], function () {
 
 // prep the app cache manifest
 gulp.task('manifest', function () {
-	gulp.src([
-		'index.html',
-		'lib/css/**/*.css',
-		'lib/js/*.min.js',
-		'lib/font/**/*',
-		'lib/icon/**/*',
-		'lib/img/**/*'
-	])
+	gulp.src(['www/**/*'])
 		.pipe(manifest({
 			hash: true,
 			timestamp: true,
 			preferOnline: true,
 			network: ['http://*', 'https://*', '*'],
 			filename: 'app.manifest',
-			exclude: 'app.manifest'
+			exclude: ['app.manifest']
 		}))
 		.pipe(gulp.dest(''));
 });
