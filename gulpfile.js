@@ -105,6 +105,15 @@ gulp.task('manifest', function () {
 		.pipe(gulp.dest(''));
 });
 
+// clean the app cache manifest
+gulp.task('manifest:clean', function () {
+	return gulp.src('app.manifest', {
+			read: false,
+			force: true
+		})
+		.pipe(clean());
+});
+
 // Dev Tasks
 gulp.task('dev', ['sass', 'lint', 'appscripts', 'watch']);
 
@@ -112,4 +121,4 @@ gulp.task('dev', ['sass', 'lint', 'appscripts', 'watch']);
 gulp.task('build', ['sass', 'lint', 'appscripts', 'vendorscripts']);
 
 // Default Task
-gulp.task('default', ['serve']);
+gulp.task('default', ['manifest:clean', 'serve']);
