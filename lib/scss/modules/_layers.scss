@@ -103,7 +103,13 @@
 	}
 }
 
+#sticksHintLayer {
+	overflow: visible;
+	z-index: 13;
+}
+
 #sticksLayer {
 	overflow: visible;
 	z-index: 15;
 }
+
