@@ -10,7 +10,7 @@
 		@include gradient($ios7TealGradient1, $ios7TealGradient2);
 	}
 	&.level1 {
-		@include gradient($ios7OrangeGradient1, $ios7OrangeGradient2);
+		@include gradient($ios7YellowGradient2, $ios7OrangeGradient2);
 	}
 	&.level2 {
 		@include gradient($ios7RedGradient1, $ios7RedGradient2);
