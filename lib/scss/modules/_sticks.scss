@@ -26,7 +26,7 @@
 		left: -32px;
 		right: -32px;
 		bottom: -32px;
-		border: 32px solid rgba(0,0,0,0.2);
+		border: 32px solid rgba(255,255,255,1);
 		border-radius: 64px;
 		opacity: 0;
 		@include transition();
@@ -45,7 +45,6 @@
 
 	// hint
 	&.hint {
-		background: #000;
 		&:before {
 			display: none!important;
 		}
