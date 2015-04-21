@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'brooklyn';
+	font-weight: 400;
+	src: url('../fonts/Brooklyn-Book.woff') format('woff'),
+		 url('../fonts/Brooklyn-Book.svg#svgFontName') format('svg');
+}
+@font-face {
+	font-family: 'brooklyn';
+	font-weight: 600;
+	src: url('../fonts/Brooklyn-Bold.woff') format('woff'),
+		 url('../fonts/Brooklyn-Bold.svg#svgFontName') format('svg');
+}
