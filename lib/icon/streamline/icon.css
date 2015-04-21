@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "streamline";
+  src:url("streamline.ttf") format("truetype"),
+      url("streamline.svg#streamline") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-streamline-icon]:before {
+  font-family: "streamline" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="streamline-"]:before,
+[class*=" streamline-"]:before {
+  font-family: "streamline" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.streamline-icon-armchair:before {
+  content: "\e000";
+}
+.streamline-icon-arrow:before {
+  content: "\e001";
+}
+.streamline-icon-backpack:before {
+  content: "\e002";
+}
+.streamline-icon-bag:before {
+  content: "\e003";
+}
+.streamline-icon-barbecue:before {
+  content: "\e004";
+}
+.streamline-icon-espresso:before {
+  content: "\e005";
+}
+.streamline-icon-book-dowload:before {
+  content: "\e006";
+}
+.streamline-icon-book-read:before {
+  content: "\e007";
+}
+.streamline-icon-window:before {
+  content: "\e008";
+}
+.streamline-icon-brush-paint:before {
+  content: "\e009";
+}
+.streamline-icon-bubble-love:before {
+  content: "\e00a";
+}
+.streamline-icon-polaroid:before {
+  content: "\e00b";
+}
+.streamline-icon-camera:before {
+  content: "\e00c";
+}
+.streamline-icon-camera-video:before {
+  content: "\e00d";
+}
+.streamline-icon-chaplin:before {
+  content: "\e00e";
+}
+.streamline-icon-chef:before {
+  content: "\e00f";
+}
+.streamline-icon-clock:before {
+  content: "\e010";
+}
+.streamline-icon-cocktail:before {
+  content: "\e011";
+}
+.streamline-icon-coffee:before {
+  content: "\e012";
+}
+.streamline-icon-computer-imac:before {
+  content: "\e013";
+}
+.streamline-icon-imac-2:before {
+  content: "\e014";
+}
+.streamline-icon-macintosh-vintage:before {
+  content: "\e015";
+}
+.streamline-icon-network:before {
+  content: "\e016";
+}
+.streamline-icon-apple-tv:before {
+  content: "\e017";
+}
+.streamline-icon-cook-pot:before {
+  content: "\e018";
+}
+.streamline-icon-crop:before {
+  content: "\e019";
+}
+.streamline-icon-dashboard:before {
+  content: "\e01a";
+}
+.streamline-icon-database:before {
+  content: "\e01b";
+}
+.streamline-icon-delete-garbage:before {
+  content: "\e01c";
+}
+.streamline-icon-tablet:before {
+  content: "\e01d";
+}
+.streamline-icon-design-pencil-rule:before {
+  content: "\e01e";
+}
+.streamline-icon-diving:before {
+  content: "\e01f";
+}
+.streamline-icon-syring:before {
+  content: "\e020";
+}
+.streamline-icon-earth-globe:before {
+  content: "\e021";
+}
+.streamline-icon-fork-knife:before {
+  content: "\e022";
+}
+.streamline-icon-hotdog:before {
+  content: "\e023";
+}
+.streamline-icon-edit:before {
+  content: "\e024";
+}
+.streamline-icon-envellope:before {
+  content: "\e025";
+}
+.streamline-icon-eye-dropper:before {
+  content: "\e026";
+}
+.streamline-icon-factory-lift:before {
+  content: "\e027";
+}
+.streamline-icon-first-aid:before {
+  content: "\e028";
+}
+.streamline-icon-icecream:before {
+  content: "\e029";
+}
+.streamline-icon-frame-picture:before {
+  content: "\e02a";
+}
+.streamline-icon-handle:before {
+  content: "\e02b";
+}
+.streamline-icon-smiley:before {
+  content: "\e02c";
+}
+.streamline-icon-headset:before {
+  content: "\e02d";
+}
+.streamline-icon-home:before {
+  content: "\e02e";
+}
+.streamline-icon-ibook:before {
+  content: "\e02f";
+}
+.streamline-icon-ink-pen:before {
+  content: "\e030";
+}
+.streamline-icon-ipad:before {
+  content: "\e031";
+}
+.streamline-icon-iphone:before {
+  content: "\e032";
+}
+.streamline-icon-ipod-mini:before {
+  content: "\e033";
+}
+.streamline-icon-ipod-music:before {
+  content: "\e034";
+}
+.streamline-icon-ipod:before {
+  content: "\e035";
+}
+.streamline-icon-tea:before {
+  content: "\e036";
+}
+.streamline-icon-laptop-macbook:before {
+  content: "\e037";
+}
+.streamline-icon-link:before {
+  content: "\e038";
+}
+.streamline-icon-macintosh:before {
+  content: "\e039";
+}
+.streamline-icon-magnet:before {
+  content: "\e03a";
+}
+.streamline-icon-man:before {
+  content: "\e03b";
+}
+.streamline-icon-map-pin:before {
+  content: "\e03c";
+}
+.streamline-icon-map-user:before {
+  content: "\e03d";
+}
+.streamline-icon-mic:before {
+  content: "\e03e";
+}
+.streamline-icon-monocle-mustache:before {
+  content: "\e03f";
+}
+.streamline-icon-music-note:before {
+  content: "\e040";
+}
+.streamline-icon-music-speaker:before {
+  content: "\e041";
+}
+.streamline-icon-notebook:before {
+  content: "\e042";
+}
+.streamline-icon-paint-bucket:before {
+  content: "\e043";
+}
+.streamline-icon-painting-pallet:before {
+  content: "\e044";
+}
+.streamline-icon-painting-roll:before {
+  content: "\e045";
+}
+.streamline-icon-pen-3:before {
+  content: "\e046";
+}
+.streamline-icon-pencil:before {
+  content: "\e047";
+}
+.streamline-icon-pen:before {
+  content: "\e048";
+}
+.streamline-icon-pen-2:before {
+  content: "\e049";
+}
+.streamline-icon-photos:before {
+  content: "\e04a";
+}
+.streamline-icon-picture:before {
+  content: "\e04b";
+}
+.streamline-icon-pictures:before {
+  content: "\e04c";
+}
+.streamline-icon-receipt:before {
+  content: "\e04d";
+}
+.streamline-icon-remote-control:before {
+  content: "\e04e";
+}
+.streamline-icon-settings-sliders:before {
+  content: "\e04f";
+}
+.streamline-icon-settings-2:before {
+  content: "\e050";
+}
+.streamline-icon-shoes:before {
+  content: "\e051";
+}
+.streamline-icon-speech:before {
+  content: "\e052";
+}
+.streamline-icon-stamp:before {
+  content: "\e053";
+}
+.streamline-icon-suitcase-travel:before {
+  content: "\e054";
+}
+.streamline-icon-umbrella:before {
+  content: "\e055";
+}
+.streamline-icon-settings:before {
+  content: "\e056";
+}
+.streamline-icon-lock:before {
+  content: "\e057";
+}
+.streamline-icon-unlock:before {
+  content: "\e058";
+}
+.streamline-icon-magic-wand:before {
+  content: "\e059";
+}
+.streamline-icon-sync:before {
+  content: "\e05a";
+}
+.streamline-icon-email:before {
+  content: "\e05b";
+}
+.streamline-icon-crown:before {
+  content: "\e05c";
+}
+.streamline-icon-skull:before {
+  content: "\e05d";
+}
+.streamline-icon-shopping-cart-in:before {
+  content: "\e05e";
+}
+.streamline-icon-shopping-cart-out:before {
+  content: "\e05f";
+}
+.streamline-icon-bomb:before {
+  content: "\e060";
+}
+.streamline-icon-bubble-comment:before {
+  content: "\e061";
+}
+.streamline-icon-grid:before {
+  content: "\e062";
+}
+.streamline-icon-heart:before {
+  content: "\e063";
+}
