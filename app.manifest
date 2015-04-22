@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Mon Apr 20 2015 21:41:37 GMT+1000 (澳大利亚东部标准时间)
+# Time: Wed Apr 22 2015 22:40:57 GMT+1000 (澳大利亚东部标准时间)
 
 
 CACHE:
@@ -13,14 +13,11 @@ lib/js/vendor.min.js
 lib/font/bob/BoB-webfont.svg
 lib/font/bob/BoB-webfont.ttf
 lib/font/bob/font.css
-lib/font/california/California-webfont.svg
-lib/font/california/California-webfont.ttf
-lib/font/california/font.css
-lib/font/hanken/font.css
-lib/font/hanken/HankenRound-Bold-webfont.svg
-lib/font/hanken/HankenRound-Bold-webfont.ttf
-lib/font/hanken/HankenRound-Regular-webfont.svg
-lib/font/hanken/HankenRound-Regular-webfont.ttf
+lib/font/brooklyn/Brooklyn-Bold.svg
+lib/font/brooklyn/Brooklyn-Bold.woff
+lib/font/brooklyn/Brooklyn-Book.svg
+lib/font/brooklyn/Brooklyn-Book.woff
+lib/font/brooklyn/font.css
 lib/font/helvetica-round/font.css
 lib/font/helvetica-round/helveticaroundedltstd-bdcnowebfont.svg
 lib/font/helvetica-round/helveticaroundedltstd-bdcnowebfont.ttf
@@ -34,9 +31,16 @@ lib/font/helvetica-round/helveticaroundedltstd-blackwebfont.svg
 lib/font/helvetica-round/helveticaroundedltstd-blackwebfont.ttf
 lib/font/helvetica-round/helveticaroundedltstd-blkowebfont.svg
 lib/font/helvetica-round/helveticaroundedltstd-blkowebfont.ttf
-lib/font/sleepytime/font.css
-lib/font/sleepytime/SleepyTime-webfont.svg
-lib/font/sleepytime/SleepyTime-webfont.ttf
+lib/font/nunito/font.css
+lib/font/nunito/Nunito-Bold.svg
+lib/font/nunito/Nunito-Bold.ttf
+lib/font/nunito/Nunito-Light.svg
+lib/font/nunito/Nunito-Light.ttf
+lib/font/nunito/Nunito-Regular.svg
+lib/font/nunito/Nunito-Regular.ttf
+lib/icon/streamline/icon.css
+lib/icon/streamline/streamline.svg
+lib/icon/streamline/streamline.ttf
 lib/icon/ionicons/css/ionicons.css
 lib/icon/ionicons/css/ionicons.min.css
 lib/icon/ionicons/fonts/ionicons.eot
@@ -54,4 +58,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: 5ce5060f69cc44e9eac11ddfed4c4ce9ec72d73b618d72e7a2156abf44bd937d
+# hash: e2a364cb3439fdf11f2a900c0577efb2ecd325ddbda043fd089d420a53802c59
