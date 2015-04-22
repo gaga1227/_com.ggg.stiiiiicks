@@ -24,15 +24,17 @@
 	.title {
 		.label {
 			color: $ios7YellowGradient1;
+			opacity: 1;
 		}
 		.text {
 			color: $ios7YellowGradient1;
+			opacity: 1;
 		}
 	}
 
 	// content
 	.content {
-		margin-top: 120px;
+		margin-top: 100px;
 		text-align: center;
 
 		// icon
@@ -44,7 +46,7 @@
 				width: 1.5em;
 				height: 1.5em;
 				color: #fff;
-				background: $ios7MagentaGradient1;
+				background: $ios7OrangeGradient1;
 				font-size: 36px;
 				line-height: 1.5em;
 				vertical-align: center;
@@ -53,10 +55,8 @@
 			.label {
 				display: block;
 				margin-top: 0.3em;
-				font-family: 'california', sans-serif;
-				font-size: 18px;
+				font-size: 14px;
 				line-height: 1em;
-				text-shadow: 0 2px 0 rgba(0,0,0,0.3);
 			}
 
 			// active
@@ -64,7 +64,6 @@
 				&:before {
 					color: $ios7TealGradient2;
 					background: #fff;
-					text-shadow: none;
 				}
 			}
 
@@ -73,7 +72,6 @@
 				&:before {
 					color: $ios7TealGradient2;
 					background: #fff;
-					text-shadow: none;
 				}
 			}
 		}

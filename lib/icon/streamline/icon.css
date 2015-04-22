@@ -19,8 +19,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="streamline-"]:before,
-[class*=" streamline-"]:before {
+[class^="streamline-icon-"]:before,
+[class*=" streamline-icon-"]:before {
   font-family: "streamline" !important;
   font-style: normal !important;
   font-weight: normal !important;

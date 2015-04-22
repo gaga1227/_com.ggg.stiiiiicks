@@ -13,12 +13,12 @@
 <link rel="apple-touch-icon-precomposed" href="icon-180.png">
 <!-- CSS:FONT -->
 <link rel="stylesheet" href="lib/font/bob/font.css">
-<link rel="stylesheet" href="lib/font/california/font.css">
-<link rel="stylesheet" href="lib/font/hanken/font.css">
+<link rel="stylesheet" href="lib/font/brooklyn/font.css">
 <link rel="stylesheet" href="lib/font/helvetica-round/font.css">
-<link rel="stylesheet" href="lib/font/sleepytime/font.css">
+<link rel="stylesheet" href="lib/font/nunito/font.css">
 <!-- CSS:ICON -->
 <link rel="stylesheet" href="lib/icon/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" href="lib/icon/streamline/icon.css">
 <!-- CSS:APP -->
 <link rel="stylesheet" href="lib/css/normalize.css">
 <link rel="stylesheet" href="lib/css/app.css">
@@ -33,7 +33,7 @@
 <div id="game" class="fixedLayer">
 	<!-- GAME -->
 	<div id="gameCanvas">
-		<div id="gridLayer" class="layer"></div>
+		<div id="gridLayer" class="layer active"></div>
 		<div id="bgAnimLayer" class="layer"></div>
 		<div id="sticksLayer" class="layer"></div>
 		<div id="sticksHintLayer" class="layer"></div>
@@ -41,11 +41,11 @@
 	<!-- GUI -->
 	<div class="gui top">
 		<div class="title">
-			<div class="label">My St<span class="count">iii</span>ckS</div>
+			<div class="label">st<span class="count">iii</span>cks</div>
 			<div class="text">0</div>
 		</div>
-		<i data-role="button" class="icon left ion-wand btnCheat"></i>
-		<i data-role="button" class="icon right ion-gear-a btnSettings"></i>
+		<i data-role="button" class="icon left streamline-icon-magic-wand btnCheat"></i>
+		<i data-role="button" class="icon right streamline-icon-settings btnSettings"></i>
 	</div>
 </div>
 
@@ -57,7 +57,7 @@
 		<div class="icon ion-ribbon-a" data-role="button"><span class="label">Achievements</span></div>
 		<div class="icon ion-forward" data-role="button"><span class="label">Share</span></div>
 		<div class="icon ion-star" data-role="button"><span class="label">Rate</span></div>
-		<div class="icon ion-android-bulb btnHints" data-role="button"><span class="label">Hints</span></div>
+		<div class="icon ion-android-bulb btnHints active" data-role="button"><span class="label">Hints</span></div>
 		<div class="icon ion-icecream btnLevel" data-role="button" data-level="0"><span class="label">Tutorial</span></div>
 		<div class="icon ion-pizza btnLevel" data-role="button" data-level="1"><span class="label">Level 1</span></div>
 		<div class="icon ion-wineglass btnLevel" data-role="button" data-level="2"><span class="label">Level 2</span></div>

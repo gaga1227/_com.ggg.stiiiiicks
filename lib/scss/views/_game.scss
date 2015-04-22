@@ -3,54 +3,38 @@
 ** Game styles **
 */
 
+// vars
+$topOffset: 100px;
+
 // container
 #game {
 	// levels
 	&.level0 {
-		@include gradient($ios7TealGradient1, $ios7TealGradient2);
+		@include gradient($ios7TealGradient2, $ios7TealGradient1);
 	}
 	&.level1 {
-		@include gradient($ios7YellowGradient2, $ios7OrangeGradient2);
+		@include gradient($ios7OrangeGradient2, $ios7OrangeGradient1);
 	}
 	&.level2 {
-		@include gradient($ios7RedGradient1, $ios7RedGradient2);
+		@include gradient($ios7RedGradient2, $ios7RedGradient1);
 	}
 	&.level3 {
-		@include gradient($ios7PurpleGradient1, $ios7PurpleGradient2);
+		@include gradient($ios7PurpleGradient2, $ios7PurpleGradient1);
 	}
 
 	// game canvas container
 	#gameCanvas {
 		position: absolute;
-		top: 100px;
-		left: 20px;
-		right: 20px;
-		bottom: 20px;
-	}
+		top: $topOffset;
+		left: 0;
+		right: 0;
+		bottom: 0;
 
-	// title
-	.title {
-		.label {
-			color: $ios7BlackGradient2;
-			text-shadow: 0 2px 0px rgba(255,255,255,0.4);
-		}
-		.text {
-			color: $ios7BlackGradient2;
-			text-shadow: 0 4px 0px rgba(255,255,255,0.4);
-		}
-	}
-
-	// icon
-	.icon {
-		&:before {
-			color: $ios7BlackGradient1;
-			text-shadow: 0 4px 0px rgba(255,255,255,0.4);
-		}
-		// interaction
-		&.active {
-			&:before {
-				text-shadow: none;
-			}
+		// grid layer
+		#gridLayer {
+			top: -1 * $topOffset;
+			bottom: 0;
+			height: auto;
 		}
 	}
 }

@@ -21,7 +21,7 @@
 		width: 200px;
 		height: 200px;
 		margin: -100px 0 0 -100px;
-		background: #fff;
+		background: $ios7BlueGradient2;
 		border-radius: 50%;
 		@include transform-origin(50%);
 
@@ -35,13 +35,13 @@
 			width: 99%;
 			height: 99%;
 			margin: -20px 0 0 -20px;
-			border: 20px solid $ios7Pink;
+			border: 20px solid $ios7BlueGradient1;
 			border-radius: 50%;
 			@include box-sizing(content-box);
 		}
 		.border {
 			margin: -20px 0 0 -20px;
-			border: 20px dotted $ios7MagentaGradient1;
+			border: 20px dotted $ios7BlueGradient2;
 		}
 
 		// text container
@@ -52,15 +52,16 @@
 			width: 100%;
 			height: auto;
 			padding: 20px;
-			color: $ios7MagentaGradient1;
+			color: #fff;
 			text-align: center;
-			font-family: 'california', sans-serif;
-			font-size: 40px;
+			font-size: 32px;
+			font-weight: 400;
 			line-height: 1em;
 			@include transform(translate(-50%, -50%));
 			b {
-				color: $ios7MagentaGradient1;
-				font-size: 1.8em;
+				color: #fff;
+				font-size: 1.2em;
+				font-weight: 600;
 				line-height: 1.1em;
 			}
 		}
