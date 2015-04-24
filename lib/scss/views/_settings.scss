@@ -45,12 +45,13 @@
 			&:before {
 				width: 1.5em;
 				height: 1.5em;
-				color: $ios7TealGradient2;
-				background: #fff;
-				font-size: 36px;
+				padding: 0.3em;
+				color: #fff;
+				font-size: 38px;
 				line-height: 1.5em;
-				vertical-align: center;
+				vertical-align: middle;
 				border-radius: 50%;
+				@include box-sizing();
 			}
 			.label {
 				display: block;
@@ -63,15 +64,19 @@
 			&.active {
 				&:before {
 					color: #fff;
-					background: $ios7RedGradient1;
+					border: 2px solid rgba(255,255,255,1);
 				}
 			}
 
 			// selected
 			&.selected {
 				&:before {
-					color: #fff;
-					background: $ios7RedGradient1;
+					color: $ios7TealGradient2;
+					background: #fff;
+					border: none!important;
+				}
+				.label {
+					font-weight: 600;
 				}
 			}
 		}

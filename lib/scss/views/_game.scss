@@ -11,15 +11,41 @@ $topOffset: 100px;
 	// levels
 	&.level0 {
 		@include gradient($ios7TealGradient2, $ios7TealGradient1);
+		#gridLayer {
+			opacity: 0.30;
+		}
 	}
 	&.level1 {
 		@include gradient($ios7OrangeGradient2, $ios7OrangeGradient1);
+		#gridLayer {
+			opacity: 0.20;
+		}
 	}
 	&.level2 {
 		@include gradient($ios7RedGradient2, $ios7RedGradient1);
+		#gridLayer {
+			opacity: 0.15;
+		}
 	}
 	&.level3 {
 		@include gradient($ios7PurpleGradient2, $ios7PurpleGradient1);
+		#gridLayer {
+			opacity: 0.10;
+		}
+	}
+
+	// game graphic bg
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url('../img/bg-symphony-dark.png') repeat;
+		background-size: 99px 99px;
+		opacity: 0.4;
 	}
 
 	// game canvas container

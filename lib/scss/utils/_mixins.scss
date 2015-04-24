@@ -144,14 +144,8 @@
 }
 
 // box sizing
-@mixin box-sizing($val) {
-	@if($val == null) {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	} @else {
-		-webkit-box-sizing: $val;
-		-moz-box-sizing: $val;
-		box-sizing: $val;
-	}
+@mixin box-sizing($val:border-box) {
+	-webkit-box-sizing: $val;
+	-moz-box-sizing: $val;
+	box-sizing: $val;
 }
