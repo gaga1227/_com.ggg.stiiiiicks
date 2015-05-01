@@ -7,6 +7,7 @@
 // -------------------------------------------------------------------------------------------
 
 .layer {
+	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -21,6 +22,7 @@
 }
 
 .fixedLayer {
+	display: block;
 	position: fixed;
 	top :0;
 	left: 0;
