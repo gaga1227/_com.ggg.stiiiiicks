@@ -32,7 +32,7 @@
 <!-- GAME -->
 <div id="game" class="fixedLayer">
 	<!-- BG -->
-	<canvas id="gameBg" class="fixedLayer"></canvas>
+	<div id="gameBg" class="fixedLayer"></div>
 	<!-- GAME -->
 	<div id="gameCanvas">
 		<div id="gridLayer" class="layer active"></div>
@@ -111,34 +111,6 @@
 <script>
 $(function() {
 	// FastClick.attach(document.body);
-
-	var variance = 0.3;
-	var increment = 0.01;
-	var varianceAdd = true;
-	function step() {
-		if (varianceAdd) {
-			variance += increment;
-		} else {
-			variance -= increment;
-		}
-		if (variance >= 1) {
-			varianceAdd = false;
-		} else if (variance <= 0.3) {
-			varianceAdd = true;
-		}
-		var pattern = Trianglify({
-			height: window.innerHeight,
-			width: window.innerWidth,
-			cell_size: 30 + Math.random() * 15,
-			variance: variance,
-			x_colors: ['#ff3838', '#ffdb4d', '#c742fc'],
-			y_colors: ['#ff3838', '#ffdb4d', '#1c61f0']
-		});
-		console.log(pattern.polys);
-		pattern.canvas($('#gameBg')[0]);
-		// window.requestAnimationFrame(step);
-	}
-	window.requestAnimationFrame(step);
 });
 </script>
 </body>

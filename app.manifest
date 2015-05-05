@@ -1,13 +1,11 @@
 CACHE MANIFEST
-# Time: Thu Apr 30 2015 22:41:02 GMT+1000 (澳大利亚东部标准时间)
+# Time: Tue May 05 2015 22:07:45 GMT+1000 (澳大利亚东部标准时间)
 
 
 CACHE:
 index.html
 lib/css/app.css
 lib/css/normalize.css
-lib/img/bg-symphony-dark.png
-lib/img/bg-symphony-light.png
 lib/img/loader-dark.png
 lib/img/loader-light.png
 lib/js/app.min.js
@@ -60,4 +58,4 @@ https://*
 SETTINGS:
 prefer-online
 
-# hash: f3bcb61cc7ba70808c428418e1cb6468cac3e6cf9baaef9d941b4a8d3962d027
+# hash: 0e69597b8c2ab39d45a9eb78a3f6114732571d5a648b4840c7ec617b86a65213
