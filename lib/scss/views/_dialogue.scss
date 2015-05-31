@@ -1,0 +1,54 @@
+/*
+# Dialogue
+** Dialogue styles **
+*/
+
+// container
+#dialogue {
+	overflow: hidden;
+	z-index: 300;
+	color: #fff;
+	@include gradient($ios7Red, $ios7RedGradient1);
+	opacity: 0;
+	text-align: center;
+	@include transform(scale(0));
+	@include transform-origin(50%);
+	@include transition();
+
+	// active
+	&.active {
+		opacity: 1;
+		@include transform(scale(1));
+	}
+
+	// icon
+	.icon {
+		display: inline-block;
+		margin: 2.5em 0 0 0;
+		font-size: 64px;
+		line-height: 1;
+	}
+
+	// title
+	.title {
+		margin: 0 0 1em 0;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	// button action
+	.btnAction {
+		display: inline-block;
+		padding: 0.5em 1.5em;
+		color: #fff;
+		border: 4px solid white;
+		font-size: 22px;
+		font-weight: bold;
+
+		&.active {
+			color: $ios7Red;
+			background: #fff;
+			@include transform(scale(0.9));
+		}
+	}
+}
