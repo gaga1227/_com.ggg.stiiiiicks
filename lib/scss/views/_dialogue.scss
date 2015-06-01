@@ -8,7 +8,7 @@
 	overflow: hidden;
 	z-index: 300;
 	color: #fff;
-	@include gradient($ios7Red, $ios7RedGradient1);
+	@include gradient(#fff, #fff);
 	opacity: 0;
 	text-align: center;
 	@include transform(scale(0));
@@ -46,9 +46,43 @@
 		font-weight: bold;
 
 		&.active {
-			color: $ios7Red;
+			color: #fff;
 			background: #fff;
 			@include transform(scale(0.9));
+		}
+	}
+
+	// levels
+	&.level0 {
+		@include gradient($ios7TealGradient2, $ios7TealGradient1);
+		.btnAction {
+			&.active {
+				color: $ios7TealGradient1;
+			}
+		}
+	}
+	&.level1 {
+		@include gradient($ios7OrangeGradient2, $ios7OrangeGradient1);
+		.btnAction {
+			&.active {
+				color: $ios7OrangeGradient1;
+			}
+		}
+	}
+	&.level2 {
+		@include gradient($ios7RedGradient2, $ios7RedGradient1);
+		.btnAction {
+			&.active {
+				color: $ios7RedGradient1;
+			}
+		}
+	}
+	&.level3 {
+		@include gradient($ios7PurpleGradient2, $ios7PurpleGradient1);
+		.btnAction {
+			&.active {
+				color: $ios7PurpleGradient1;
+			}
 		}
 	}
 }
